@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1024">
+    <title>ASE .ini Generator</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/ase-ini-gen/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ase-ini-gen/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ase-ini-gen/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/ase-ini-gen/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/ase-ini-gen/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#5bbad5">
+    <meta name="msapplication-config" content="/ase-ini-gen/images/favicon/browserconfig.xml?">
+    <meta name="theme-color" content="#5bbad5">
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="script.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/image_slider.css">
+    <link rel="stylesheet" href="./css/popup.css">
+    <link rel="stylesheet" href="./css/codeblock.css">
+    <link rel="stylesheet" href="./css/buttons.css">
+    <link rel="stylesheet" href="./css/switch.css">
+    <link rel="stylesheet" href="./css/stepper.css">
+    <link rel="stylesheet" href="./css/table.css">
+
+    <meta property="og:title" content="ase-ini-gen">
+    <meta property="og:site_name" content="ase-ini-gen">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alifpapp.github.io/ase-ini-gen/">
+    <meta name="og:image" content="https://alifpapp.github.io/ase-ini-gen/images/gear.png" />
+    <meta property="og:description" content="ARK: Survival Evolved | ConsoleVariables.ini Editor">
+</head>
+
+<body>
+    <div class="header_wrapper">
+        <div class="header_styled">
+            <a href="https://github.com/alifpapp/ase-ini-gen" target="_blank">
+                <img src="images/gear.png" alt="logo" width="60rem" height="60rem" onmouseover="logo_hovered(this)"
+                    onmouseout="logo(this)">
+            </a>
+            <a class="header_text" href="#" style="margin-left: .5rem;">
+                <div class="header_title">ASE .ini Generator</div>
+                <div class="header_subtitle">Generates .ini file for ARK: Survival Evolved</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="editor">
+        <div class="container">
+            <div class="row py-4">
+                <!-- Preview Image  -->
+                <div class="text-center">
+                    <div class="img_slider" value="1" max="4">
+                        <div id="img_slider-1" class="slider_img active">
+                            <img class="slider_img2" src="./images/PreviewUnavailable.png" />
+                        </div>
+
+                        <div class="img_slider-btn_left" onclick="SlideImage(event)"></div>
+                        <div class="img_slider-btn_right" onclick="SlideImage(event)"></div>
+                        <div class="img_slider-dots">
+                            <div class="img_slider-dot active" onclick="SlideImage_dot(event)" value="1"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Settings & Create File Button -->
+                <div class="col pt-3 pb-2 text-center">
+                    <button class="custom-btn btn-16" style="margin-right: 200px;"
+                        onclick="button_settings(event)">Settings</button>
+                    <div class="popup" id="popup_settings" role="alert" onclick="closepopup(event)" data-id="settings">
+                        <div class="popup-container">
+                            <div class="popup-header_wrapper">
+                                <a href="#0" class="popup-close" data-id="settings">Close</a>
+                                <h2>Settings</h2>
+                            </div>
+                            <div style="height: 100%; padding: 5em; padding-top: 2em; padding-bottom: 0;">
+                                <h5 class="text-start" style="margin-left: 2.5%;">Generator.json</h5>
+                                <textarea class="h-30" id="editor_settings"></textarea>
+                                <button class="custom-btn btn-16" onclick="button_copy(event)"
+                                    data-id="editor_settings">Copy</button>
+                                <button class="custom-btn btn-16 ms-15" onclick="button_reset(event)"
+                                    data-id="editor_settings">Reset</button>
+
+                                <h5 class="text-start" style="margin-top: 1em; margin-left: 2.5%;">Preview.json</h5>
+                                <textarea class="h-30" id="editor_preview"></textarea>
+                                <button class="custom-btn btn-16" onclick="button_copy(event)"
+                                    data-id="editor_preview">Copy</button>
+                                <button class="custom-btn btn-16 ms-15" onclick="button_reset(event)"
+                                    data-id="editor_preview">Reset</button>
+
+                                <h5 class="text-start" style="margin-top: 1em; margin-left: 2.5%;">.ini to Generator.json</h5>
+                                <table class="h-30">
+                                    <tr class="h-30">
+                                        <td>
+                                            <textarea id="ini2json_1"></textarea>
+                                        </td>
+                                        <td>
+                                            <h2>--></h2>
+                                        </td>
+                                        <td>
+                                            <textarea id="ini2json_2"></textarea>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button class="custom-btn btn-16 me-10" onclick="button_copy(event)"
+                                    data-id="ini2json_1">Copy</button>
+                                <button class="custom-btn btn-16" onclick="button_process(event)">Process</button>
+                                <button class="custom-btn btn-16 ms-10" onclick="button_copy(event)"
+                                    data-id="ini2json_2">Copy</button>
+                                <div style="padding: 1em;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="custom-btn btn-16" onclick="button_createfile(event)">Create File</button>
+                    <div class="popup" id="popup_createfile" role="alert" onclick="closepopup(event)"
+                        data-id="create_file">
+                        <div class="popup-container">
+                            <div class="popup-header_wrapper">
+                                <a href="#0" class="popup-close" data-id="create_file">Close</a>
+                                <h2>ConsoleVariable.ini</h2>
+                            </div>
+                            <div style="height: 90%; padding: 5em; padding-top: 2em; padding-bottom: 0;">
+                                <textarea class="h-80" id="consolevariables_ini" readonly="readonly"></textarea>
+                                <button class="custom-btn btn-16" onclick="button_copy(event)"
+                                    data-id="consolevariables_ini">Copy</button>
+                                <!-- <button class="custom-btn btn-16 ms-15" onclick="button_download(event)" data-id="consolevariables_ini" data-filename="ConsoleVariable.ini.txt">Download</button> -->
+                                <div style="padding: 1em;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Button to check if using "-2m4 -d3d10" startup options (if this does effect ini)-->
+
+                <div id="editor">
+                    <!-- generated by script.js from "./json/EditorSettings1.json" -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="col text-center" style="margin-bottom: 25px;">
+            <h4 class="text-white">Project's <a class="text-hover" href="https://github.com/AlifPapp/ase-ini-gen">Github</a></h4>
+        </div>
+        <div class="col text-center" style="margin-bottom: 25px;">
+            <h4 class="text-white">Made by <a class="text-hover" href="https://alifpapp.github.io">Alif Papp</a></h4>
+        </div>
+    </div>
+</body>
+
+</html>

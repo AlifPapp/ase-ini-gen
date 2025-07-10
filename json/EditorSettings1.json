@@ -1,0 +1,1564 @@
+{
+  "Setting_1": {
+    "Title": "Remove leaves and bushes",
+    "Description": "<b>Warning:</b> Also removes some other world meshes (rocks, metal nodes, crystals, etc.)",
+    "Default": "true",
+    "Console_Variables": {
+      "Variable_1": {
+        "Name": "foliage.UseOcclusionType",
+        "Id": "foliage_UseOcclusionType",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "1",
+        "DataStep": "1"
+      }
+    }
+  },
+  "Setting_2": {
+    "Title": "Reduce particles",
+    "Description": "<b>Description:</b> Set max ammount of particles from smoke grenade, flamethrower smoke, etc.<br><b>Warning:</b> Poison wyvern and basilisk poison balls are harder to see.",
+    "Default": "true",
+    "Console_Variables": {
+      "Variable_1": {
+        "Name": "FX.MaxCPUParticlesPerEmitter",
+        "Id": "FX_MaxCPUParticlesPerEmitter",
+        "Type": "int",
+        "Value": "1",
+        "Min": "1",
+        "Max": "999",
+        "DataStep": "1"
+      }
+    }
+  },
+  "Setting_3": {
+    "Title": "Remove water surface",
+    "Description": "<b>Warning:</b> Also removes a lot of other things:<br>(Structure placement overlay, parasaur red detections, weapon projectiles, dino projectiles, loot crate beams, etc.)",
+    "Default": "true",
+    "Console_Variables": {
+      "Variable_1": {
+        "Name": "ShowFlag.GameplayDebug",
+        "Id": "ShowFlag_GameplayDebug",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "1",
+        "DataStep": "1"
+      }
+    }
+  },
+  "Setting_4": {
+    "Title": "Remove fog on Island completely",
+    "Description": "<b>Warning:</b> Also removes a lot of other things:<br>(Parasaur red detections, weapon projectiles, dino projectiles, loot crate beam, etc.)",
+    "Default": "true",
+    "Console_Variables": {
+      "Variable_1": {
+        "Name": "ShowFlag.Splines",
+        "Id": "ShowFlag_Splines",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "1",
+        "DataStep": "1"
+      }
+    }
+  },
+  "Setting_5": {
+    "Title": "Framerate",
+    "Description": "<b>Description:</b> Sets max fps and smooths framerate",
+    "Default": "true",
+    "Console_Variables": {
+      "Variable_1": {
+        "Name": "t.maxfps",
+        "Id": "t_maxfps",
+        "Type": "int",
+        "Value": "144",
+        "Min": "1",
+        "Max": "999",
+        "DataStep": "1"
+      },
+      "Variable_2": {
+        "Name": "FrameRateCap",
+        "Id": "FrameRateCap",
+        "Type": "int",
+        "Value": "144",
+        "Min": "1",
+        "Max": "999",
+        "DataStep": "1"
+      },
+      "Variable_3": {
+        "Name": "FrameRateMinimum",
+        "Id": "FrameRateMinimum",
+        "Type": "int",
+        "Value": "144",
+        "Min": "1",
+        "Max": "999",
+        "DataStep": "1"
+      },
+      "Variable_4": {
+        "Name": "MaxES2PixelShaderAdditiveComplexityCount",
+        "Id": "MaxES2PixelShaderAdditiveComplexityCount",
+        "Type": "int",
+        "Value": "45",
+        "Min": "1",
+        "Max": "999",
+        "DataStep": "1"
+      },
+      "Variable_5": {
+        "Name": "MaxPixelShaderAdditiveComplexityCount",
+        "Id": "MaxPixelShaderAdditiveComplexityCount",
+        "Type": "int",
+        "Value": "128",
+        "Min": "1",
+        "Max": "999",
+        "DataStep": "1"
+      },
+      "Variable_6": {
+        "Name": "MaxSmoothedFrameRate",
+        "Id": "MaxSmoothedFrameRate",
+        "Type": "int",
+        "Value": "144",
+        "Min": "1",
+        "Max": "999",
+        "DataStep": "1"
+      },
+      "Variable_7": {
+        "Name": "MinDesiredFrameRate",
+        "Id": "MinDesiredFrameRate",
+        "Type": "int",
+        "Value": "70",
+        "Min": "1",
+        "Max": "999",
+        "DataStep": "1"
+      },
+      "Variable_8": {
+        "Name": "MinSmoothedFrameRate",
+        "Id": "MinSmoothedFrameRate",
+        "Type": "int",
+        "Value": "5",
+        "Min": "1",
+        "Max": "999",
+        "DataStep": "1"
+      }
+    }
+  },
+  "Setting_6": {
+    "Title": "Remove various visual effects",
+    "Description": "<b>Description:</b> Removes (plantZ, plantX, Beer, Unclear water, etc.)<br><b>Warning:</b> Also removes Tek railgun, Tek helmet, Snow Owl and Bloodtslaker vision.",
+    "Default": "true",
+    "Console_Variables": {
+      "Variable_1": {
+        "Name": "ShowFlag.Materials",
+        "Id": "ShowFlag_Materials",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "1",
+        "DataStep": "1"
+      },
+      "Variable_2": {
+        "Name": "r.CustomDepth",
+        "Id": "r_CustomDepth",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "1",
+        "DataStep": "1"
+      }
+    }
+  },
+  "Setting_7": {
+    "Title": "Fix dedicated storage text",
+    "Description": "<b>Warning:</b> Certain fog effects will be added back",
+    "Default": "true",
+    "Console_Variables": {
+      "Variable_1": {
+        "Name": "ShowFlag.Fog",
+        "Id": "ShowFlag_Fog",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "1",
+        "DataStep": "1"
+      }
+    }
+  },
+  "Setting_8": {
+    "Title": "Fix black/noisy snow",
+    "Description": "<b>Warning:</b> Lot of lighting and shadow effects will be added back, reducing the overall visibility and performance",
+    "Default": "true",
+    "Console_Variables": {
+      "Variable_1": {
+        "Name": "ShowFlag.LightComplexity",
+        "Id": "ShowFlag_LightComplexity",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "1",
+        "DataStep": "1"
+      },
+      "Variable_2": {
+        "Name": "ShowFlag.ShaderComplexity",
+        "Id": "ShowFlag_ShaderComplexity",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "1",
+        "DataStep": "1"
+      },
+      "Variable_3": {
+        "Name": "ShowFlag.LightShafts",
+        "Id": "ShowFlag_LightShafts",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "1",
+        "DataStep": "1"
+      },
+      "Variable_4": {
+        "Name": "ShowFlag.Refraction",
+        "Id": "ShowFlag_Refraction",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "1",
+        "DataStep": "1"
+      }
+    }
+  },
+  "Setting_9": {
+    "Title": "Remove a lot of effects",
+    "Description": "<b>Description:</b> Removes a lot of effects to increase fps",
+    "Default": "true",
+    "Console_Variables": {
+      "Variable_0": {
+        "Name": "bDisablePhysXHardwareSupport",
+        "Id": "bDisablePhysXHardwareSupport",
+        "Type": "bool",
+        "Value": "True"
+      },
+      "Variable_1": {
+        "Name": "bFirstRun",
+        "Id": "bFirstRun",
+        "Type": "bool",
+        "Value": "False"
+      },
+      "Variable_2": {
+        "Name": "FogDensity",
+        "Id": "FogDensity",
+        "Type": "int",
+        "Value": "0.0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 0.1
+      },
+      "Variable_3": {
+        "Name": "NearClipPlane",
+        "Id": "NearClipPlane",
+        "Type": "int",
+        "Value": "12.0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 0.1
+      },
+      "Variable_4": {
+        "Name": "ShowFlag.AmbientOcclusion",
+        "Id": "ShowFlag_AmbientOcclusion",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_5": {
+        "Name": "ShowFlag.AntiAliasing",
+        "Id": "ShowFlag_AntiAliasing",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_6": {
+        "Name": "ShowFlag.Atmosphere",
+        "Id": "ShowFlag_Atmosphere",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_7": {
+        "Name": "ShowFlag.AtmosphericFog",
+        "Id": "ShowFlag_AtmosphericFog",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_8": {
+        "Name": "ShowFlag.AudioRadius",
+        "Id": "ShowFlag_AudioRadius",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_9": {
+        "Name": "ShowFlag.BSP",
+        "Id": "ShowFlag_BSP",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_10": {
+        "Name": "ShowFlag.BSPSplit",
+        "Id": "ShowFlag_BSPSplit",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_11": {
+        "Name": "ShowFlag.BSPTriangles",
+        "Id": "ShowFlag_BSPTriangles",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_12": {
+        "Name": "ShowFlag.BillboardSprites",
+        "Id": "ShowFlag_BillboardSprites",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_13": {
+        "Name": "ShowFlag.Brushes",
+        "Id": "ShowFlag_Brushes",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_14": {
+        "Name": "ShowFlag.BuilderBrush",
+        "Id": "ShowFlag_BuilderBrush",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_15": {
+        "Name": "ShowFlag.CameraAspectRatioBars",
+        "Id": "ShowFlag_CameraAspectRatioBars",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_16": {
+        "Name": "ShowFlag.CameraFrustums",
+        "Id": "ShowFlag_CameraFrustums",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_17": {
+        "Name": "ShowFlag.CameraImperfections",
+        "Id": "ShowFlag_CameraImperfections",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_18": {
+        "Name": "ShowFlag.CameraInterpolation",
+        "Id": "ShowFlag_CameraInterpolation",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_19": {
+        "Name": "ShowFlag.CameraSafeFrames",
+        "Id": "ShowFlag_CameraSafeFrames",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_20": {
+        "Name": "ShowFlag.ColorGrading",
+        "Id": "ShowFlag_ColorGrading",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_21": {
+        "Name": "ShowFlag.CompositeEditorPrimitives",
+        "Id": "ShowFlag_CompositeEditorPrimitives",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_22": {
+        "Name": "ShowFlag.Constraints",
+        "Id": "ShowFlag_Constraints",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_23": {
+        "Name": "ShowFlag.Cover",
+        "Id": "ShowFlag_Cover",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_24": {
+        "Name": "ShowFlag.Decals",
+        "Id": "ShowFlag_Decals",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_25": {
+        "Name": "ShowFlag.DeferredLighting",
+        "Id": "ShowFlag_DeferredLighting",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_26": {
+        "Name": "ShowFlag.DepthOfField",
+        "Id": "ShowFlag_DepthOfField",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_27": {
+        "Name": "ShowFlag.Diffuse",
+        "Id": "ShowFlag_Diffuse",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_28": {
+        "Name": "ShowFlag.DirectLighting",
+        "Id": "ShowFlag_DirectLighting",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_29": {
+        "Name": "ShowFlag.DirectionalLights",
+        "Id": "ShowFlag_DirectionalLights",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_30": {
+        "Name": "ShowFlag.DistanceCulledPrimitives",
+        "Id": "ShowFlag_DistanceCulledPrimitives",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_31": {
+        "Name": "ShowFlag.DistanceFieldAO",
+        "Id": "ShowFlag_DistanceFieldAO",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_32": {
+        "Name": "ShowFlag.DynamicShadows",
+        "Id": "ShowFlag_DynamicShadows",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_33": {
+        "Name": "ShowFlag.Editor",
+        "Id": "ShowFlag_Editor",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_34": {
+        "Name": "ShowFlag.EyeAdaptation",
+        "Id": "ShowFlag_EyeAdaptation",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_35": {
+        "Name": "ShowFlag.Game",
+        "Id": "ShowFlag_Game",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_36": {
+        "Name": "ShowFlag.LOD",
+        "Id": "ShowFlag_LOD",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_37": {
+        "Name": "ShowFlag.Landscape",
+        "Id": "ShowFlag_Landscape",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_38": {
+        "Name": "ShowFlag.LargeVertices",
+        "Id": "ShowFlag_LargeVertices",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_39": {
+        "Name": "ShowFlag.LensFlares",
+        "Id": "ShowFlag_LensFlares",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_40": {
+        "Name": "ShowFlag.LevelColoration",
+        "Id": "ShowFlag_LevelColoration",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_41": {
+        "Name": "ShowFlag.LightInfluences",
+        "Id": "ShowFlag_LightInfluences",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_42": {
+        "Name": "ShowFlag.LightMapDensity",
+        "Id": "ShowFlag_LightMapDensity",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_43": {
+        "Name": "ShowFlag.LightRadius",
+        "Id": "ShowFlag_LightRadius",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_44": {
+        "Name": "ShowFlag.Lighting",
+        "Id": "ShowFlag_Lighting",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_45": {
+        "Name": "ShowFlag.LpvLightingOnly",
+        "Id": "ShowFlag_LpvLightingOnly",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_46": {
+        "Name": "ShowFlag.MeshEdges",
+        "Id": "ShowFlag_MeshEdges",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_47": {
+        "Name": "ShowFlag.MotionBlur",
+        "Id": "ShowFlag_MotionBlur",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_48": {
+        "Name": "ShowFlag.OnScreenDebug",
+        "Id": "ShowFlag_OnScreenDebug",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_49": {
+        "Name": "ShowFlag.OverrideDiffuseAndSpecular",
+        "Id": "ShowFlag_OverrideDiffuseAndSpecular",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_50": {
+        "Name": "ShowFlag.Paper2DSprites",
+        "Id": "ShowFlag_Paper2DSprites",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_51": {
+        "Name": "ShowFlag.Particles",
+        "Id": "ShowFlag_Particles",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_52": {
+        "Name": "ShowFlag.Pivot",
+        "Id": "ShowFlag_Pivot",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_53": {
+        "Name": "ShowFlag.PointLights",
+        "Id": "ShowFlag_PointLights",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_54": {
+        "Name": "ShowFlag.PostProcessMaterial",
+        "Id": "ShowFlag_PostProcessMaterial",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_55": {
+        "Name": "ShowFlag.PostProcessing",
+        "Id": "ShowFlag_PostProcessing",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_56": {
+        "Name": "ShowFlag.PrecomputedVisibility",
+        "Id": "ShowFlag_PrecomputedVisibility",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_57": {
+        "Name": "ShowFlag.PreviewShadowsIndicator",
+        "Id": "ShowFlag_PreviewShadowsIndicator",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_58": {
+        "Name": "ShowFlag.ReflectionEnvironment",
+        "Id": "ShowFlag_ReflectionEnvironment",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_59": {
+        "Name": "ShowFlag.ReflectionOverride",
+        "Id": "ShowFlag_ReflectionOverride",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_60": {
+        "Name": "ShowFlag.SelectionOutline",
+        "Id": "ShowFlag_SelectionOutline",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_61": {
+        "Name": "ShowFlag.ShadowFrustums",
+        "Id": "ShowFlag_ShadowFrustums",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_62": {
+        "Name": "ShowFlag.ShadowsFromEditorHiddenActors",
+        "Id": "ShowFlag_ShadowsFromEditorHiddenActors",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_63": {
+        "Name": "ShowFlag.SkeletalMeshes",
+        "Id": "ShowFlag_SkeletalMeshes",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_64": {
+        "Name": "ShowFlag.SkyLighting",
+        "Id": "ShowFlag_SkyLighting",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_65": {
+        "Name": "ShowFlag.Snap",
+        "Id": "ShowFlag_Snap",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_66": {
+        "Name": "ShowFlag.Specular",
+        "Id": "ShowFlag_Specular",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_67": {
+        "Name": "ShowFlag.SpotLights",
+        "Id": "ShowFlag_SpotLights",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_68": {
+        "Name": "ShowFlag.StaticMeshes",
+        "Id": "ShowFlag_StaticMeshes",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_69": {
+        "Name": "ShowFlag.StationaryLightOverlap",
+        "Id": "ShowFlag_StationaryLightOverlap",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_70": {
+        "Name": "ShowFlag.StereoRendering",
+        "Id": "ShowFlag_StereoRendering",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_71": {
+        "Name": "ShowFlag.SubsurfaceScattering",
+        "Id": "ShowFlag_SubsurfaceScattering",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_72": {
+        "Name": "ShowFlag.TemporalAA",
+        "Id": "ShowFlag_TemporalAA",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_73": {
+        "Name": "ShowFlag.Tessellation",
+        "Id": "ShowFlag_Tessellation",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_74": {
+        "Name": "ShowFlag.TestImage",
+        "Id": "ShowFlag_TestImage",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_75": {
+        "Name": "ShowFlag.TextRender",
+        "Id": "ShowFlag_TextRender",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_76": {
+        "Name": "ShowFlag.TexturedLightProfiles",
+        "Id": "ShowFlag_TexturedLightProfiles",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_77": {
+        "Name": "ShowFlag.Tonemapper",
+        "Id": "ShowFlag_Tonemapper",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_78": {
+        "Name": "ShowFlag.Translucency",
+        "Id": "ShowFlag_Translucency",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_79": {
+        "Name": "ShowFlag.VectorFields",
+        "Id": "ShowFlag_VectorFields",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_80": {
+        "Name": "ShowFlag.VertexColors",
+        "Id": "ShowFlag_VertexColors",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_81": {
+        "Name": "ShowFlag.Vignette",
+        "Id": "ShowFlag_Vignette",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_82": {
+        "Name": "ShowFlag.VisualizeAdaptiveDOF",
+        "Id": "ShowFlag_VisualizeAdaptiveDOF",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_83": {
+        "Name": "ShowFlag.VisualizeBuffer",
+        "Id": "ShowFlag_VisualizeBuffer",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_84": {
+        "Name": "ShowFlag.VisualizeDOF",
+        "Id": "ShowFlag_VisualizeDOF",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_85": {
+        "Name": "ShowFlag.VisualizeDistanceFieldAO",
+        "Id": "ShowFlag_VisualizeDistanceFieldAO",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_86": {
+        "Name": "ShowFlag.VisualizeHDR",
+        "Id": "ShowFlag_VisualizeHDR",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_87": {
+        "Name": "ShowFlag.VisualizeLPV",
+        "Id": "ShowFlag_VisualizeLPV",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_88": {
+        "Name": "ShowFlag.VisualizeLightCulling",
+        "Id": "ShowFlag_VisualizeLightCulling",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_89": {
+        "Name": "ShowFlag.VisualizeMotionBlur",
+        "Id": "ShowFlag_VisualizeMotionBlur",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_90": {
+        "Name": "ShowFlag.VisualizeOutOfBoundsPixels",
+        "Id": "ShowFlag_VisualizeOutOfBoundsPixels",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_91": {
+        "Name": "ShowFlag.VisualizeSSR",
+        "Id": "ShowFlag_VisualizeSSR",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_92": {
+        "Name": "ShowFlag.VisualizeSenses",
+        "Id": "ShowFlag_VisualizeSenses",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_93": {
+        "Name": "ShowFlag.Wireframe",
+        "Id": "ShowFlag_Wireframe",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_94": {
+        "Name": "ShowFloatingDamageText",
+        "Id": "ShowFloatingDamageText",
+        "Type": "bool",
+        "Value": "True"
+      },
+      "Variable_95": {
+        "Name": "TEXTUREGROUP_Character=(MinLODSize=1,MaxLODSize=4,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_96": {
+        "Name": "TEXTUREGROUP_CharacterNormalMap=(MinLODSize=1,MaxLODSize=4,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_97": {
+        "Name": "TEXTUREGROUP_CharacterSpecular=(MinLODSize=1,MaxLODSize=4,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_98": {
+        "Name": "TEXTUREGROUP_Cinematic=(MinLODSize=1,MaxLODSize=128,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_99": {
+        "Name": "TEXTUREGROUP_Effects=(MinLODSize=1,MaxLODSize=128,LODBias=0,MinMagFilter=linear,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_100": {
+        "Name": "TEXTUREGROUP_EffectsNotFiltered=(MinLODSize=1,MaxLODSize=128,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_101": {
+        "Name": "TEXTUREGROUP_Lightmap=(MinLODSize=1,MaxLODSize=8,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_102": {
+        "Name": "TEXTUREGROUP_MobileFlattened=(MinLODSize=1,MaxLODSize=2,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_103": {
+        "Name": "TEXTUREGROUP_RenderTarget=(MinLODSize=1,MaxLODSize=128,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_104": {
+        "Name": "TEXTUREGROUP_Shadowmap=(MinLODSize=1,MaxLODSize=2,LODBias=0,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=3)",
+        "Type": "none"
+      },
+      "Variable_105": {
+        "Name": "TEXTUREGROUP_Skybox=(MinLODSize=1,MaxLODSize=256,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_106": {
+        "Name": "TEXTUREGROUP_Terrain_Heightmap=(MinLODSize=1,MaxLODSize=2,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_107": {
+        "Name": "TEXTUREGROUP_Terrain_Weightmap=(MinLODSize=1,MaxLODSize=2,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_108": {
+        "Name": "TEXTUREGROUP_UI=(MinLODSize=1,MaxLODSize=256,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_109": {
+        "Name": "TEXTUREGROUP_Vehicle=(MinLODSize=1,MaxLODSize=256,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_110": {
+        "Name": "TEXTUREGROUP_VehicleNormalMap=(MinLODSize=1,MaxLODSize=256,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_111": {
+        "Name": "TEXTUREGROUP_VehicleSpecular=(MinLODSize=1,MaxLODSize=256,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_112": {
+        "Name": "TEXTUREGROUP_Weapon=(MinLODSize=1,MaxLODSize=64,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_113": {
+        "Name": "TEXTUREGROUP_WeaponNormalMap=(MinLODSize=1,MaxLODSize=64,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_114": {
+        "Name": "TEXTUREGROUP_WeaponSpecular=(MinLODSize=1,MaxLODSize=64,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_115": {
+        "Name": "TEXTUREGROUP_World=(MinLODSize=1,MaxLODSize=2,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_116": {
+        "Name": "TEXTUREGROUP_WorldNormalMap=(MinLODSize=1,MaxLODSize=2,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_117": {
+        "Name": "TEXTUREGROUP_WorldSpecular=(MinLODSize=1,MaxLODSize=2,LODBias=0,MinMagFilter=aniso,MipFilter=point)",
+        "Type": "none"
+      },
+      "Variable_118": {
+        "Name": "r.AOTrimOldRecordsFraction",
+        "Id": "r_AOTrimOldRecordsFraction",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_119": {
+        "Name": "r.AmbientOcclusionLevels",
+        "Id": "r_AmbientOcclusionLevels",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_120": {
+        "Name": "r.Atmosphere",
+        "Id": "r_Atmosphere",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_121": {
+        "Name": "r.BloomQuality",
+        "Id": "r_BloomQuality",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_122": {
+        "Name": "r.ClearWithExcludeRects",
+        "Id": "r_ClearWithExcludeRects",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_123": {
+        "Name": "r.CompileShadersForDevelopment",
+        "Id": "r_CompileShadersForDevelopment",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_124": {
+        "Name": "r.DefaultFeature.AmbientOcclusion",
+        "Id": "r_DefaultFeature.AmbientOcclusion",
+        "Type": "bool",
+        "Value": "False"
+      },
+      "Variable_125": {
+        "Name": "r.DefaultFeature.AntiAliasing",
+        "Id": "r_DefaultFeature.AntiAliasing",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_126": {
+        "Name": "r.DefaultFeature.AutoExposure",
+        "Id": "r_DefaultFeature.AutoExposure",
+        "Type": "bool",
+        "Value": "False"
+      },
+      "Variable_127": {
+        "Name": "r.DefaultFeature.Bloom",
+        "Id": "r_DefaultFeature.Bloom",
+        "Type": "bool",
+        "Value": "False"
+      },
+      "Variable_128": {
+        "Name": "r.DefaultFeature.LensFlare",
+        "Id": "r_DefaultFeature.LensFlare",
+        "Type": "bool",
+        "Value": "False"
+      },
+      "Variable_129": {
+        "Name": "r.DefaultFeature.MotionBlur",
+        "Id": "r_DefaultFeature.MotionBlur",
+        "Type": "bool",
+        "Value": "False"
+      },
+      "Variable_130": {
+        "Name": "r.DepthOfFieldQuality",
+        "Id": "r_DepthOfFieldQuality",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_131": {
+        "Name": "r.DetailMode",
+        "Id": "r_DetailMode",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_132": {
+        "Name": "r.EarlyZPass",
+        "Id": "r_EarlyZPass",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_133": {
+        "Name": "r.ExposureOffset",
+        "Id": "r_ExposureOffset",
+        "Type": "int",
+        "Value": "0.3",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 0.1
+      },
+      "Variable_134": {
+        "Name": "r.HZBOcclusion",
+        "Id": "r_HZBOcclusion",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_135": {
+        "Name": "r.LensFlareQuality",
+        "Id": "r_LensFlareQuality",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_136": {
+        "Name": "r.LightFunctionQuality",
+        "Id": "r_LightFunctionQuality",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_137": {
+        "Name": "r.LightShaftQuality",
+        "Id": "r_LightShaftQuality",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_138": {
+        "Name": "r.LightShafts",
+        "Id": "r_LightShafts",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_139": {
+        "Name": "r.MaxAnisotropy",
+        "Id": "r_MaxAnisotropy",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_140": {
+        "Name": "r.MotionBlurQuality",
+        "Id": "r_MotionBlurQuality",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_141": {
+        "Name": "r.OneFrameThreadLag",
+        "Id": "r_OneFrameThreadLag",
+        "Type": "int",
+        "Value": "1",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_142": {
+        "Name": "r.PostProcessAAQuality",
+        "Id": "r_PostProcessAAQuality",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_143": {
+        "Name": "r.ReflectionEnvironment",
+        "Id": "r_ReflectionEnvironment",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_144": {
+        "Name": "r.RefractionQuality",
+        "Id": "r_RefractionQuality",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_145": {
+        "Name": "r.SSAOSmartBlur",
+        "Id": "r_SSAOSmartBlur",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_146": {
+        "Name": "r.SSR.Quality",
+        "Id": "r_SSR.Quality",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_147": {
+        "Name": "r.SSS.SampleSet",
+        "Id": "r_SSS.SampleSet",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_148": {
+        "Name": "r.SSS.Scale",
+        "Id": "r_SSS.Scale",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_149": {
+        "Name": "r.SceneColorFringe.Max",
+        "Id": "r_SceneColorFringe.Max",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_150": {
+        "Name": "r.SceneColorFringeQuality",
+        "Id": "r_SceneColorFringeQuality",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_151": {
+        "Name": "r.Shadow.CSM.MaxCascades",
+        "Id": "r_Shadow.CSM.MaxCascades",
+        "Type": "int",
+        "Value": "1",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_152": {
+        "Name": "r.Shadow.CSM.TransitionScale",
+        "Id": "r_Shadow.CSM.TransitionScale",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_153": {
+        "Name": "r.Shadow.DistanceScale",
+        "Id": "r_Shadow.DistanceScale",
+        "Type": "int",
+        "Value": "0.1",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 0.1
+      },
+      "Variable_154": {
+        "Name": "r.Shadow.MaxResolution",
+        "Id": "r_Shadow.MaxResolution",
+        "Type": "int",
+        "Value": "2",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_155": {
+        "Name": "r.Shadow.MinResolution",
+        "Id": "r_Shadow.MinResolution",
+        "Type": "int",
+        "Value": "2",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_156": {
+        "Name": "r.Shadow.RadiusThreshold",
+        "Id": "r_Shadow.RadiusThreshold",
+        "Type": "int",
+        "Value": "0.1",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 0.1
+      },
+      "Variable_157": {
+        "Name": "r.ShadowQuality",
+        "Id": "r_ShadowQuality",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_158": {
+        "Name": "r.TonemapperQuality",
+        "Id": "r_TonemapperQuality",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_159": {
+        "Name": "r.TriangleOrderOptimization",
+        "Id": "r_TriangleOrderOptimization",
+        "Type": "int",
+        "Value": "1",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_160": {
+        "Name": "r.TrueSkyQuality",
+        "Id": "r_TrueSkyQuality",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_161": {
+        "Name": "r.UpsampleQuality",
+        "Id": "r_UpsampleQuality",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      },
+      "Variable_162": {
+        "Name": "r.ViewDistanceScale",
+        "Id": "r_ViewDistanceScale",
+        "Type": "int",
+        "Value": "0",
+        "Min": "0",
+        "Max": "999",
+        "DataStep": 1
+      }
+    }
+  }
+}

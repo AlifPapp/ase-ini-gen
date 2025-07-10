@@ -1,0 +1,130 @@
+/* switch */
+
+:root {
+    --switchcolor-on: #47a8d8;
+}
+
+.switch {
+    background-color: #fff;
+    background-image: linear-gradient(tobottom, #eeeeee, white25px);
+    border-radius: 18px;
+    box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    color: #404040;
+    cursor: pointer;
+    display: inline-block;
+    font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 28px;
+    padding: 3px;
+    position: relative;
+    vertical-align: top;
+    width: 74px;
+}
+
+.switch-input {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+
+.switch-label {
+    -moz-transition: 0.15s ease-out;
+    -moz-transition-property: opacity background;
+    -o-transition: 0.15s ease-out;
+    -o-transition-property: opacity background;
+    -webkit-transition: 0.15s ease-out;
+    -webkit-transition-property: opacity background;
+    background: #eceeef;
+    border-radius: inherit;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12),
+        inset 0 0 2px rgba(0, 0, 0, 0.15);
+    display: block;
+    font-size: 11px;
+    height: 22px;
+    position: relative;
+    text-transform: uppercase;
+    transition: 0.15s ease-out;
+    transition-property: opacity background;
+}
+
+.switch-label:before {
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    -webkit-transition: inherit;
+    color: #aaa;
+    content: attr(data-off);
+    line-height: 1;
+    margin-top: -0.5em;
+    position: absolute;
+    right: 11px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    top: 50%;
+    transition: inherit;
+}
+
+.switch-label:after {
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    -webkit-transition: inherit;
+    color: #fff;
+    content: attr(data-on);
+    left: 11px;
+    line-height: 1;
+    margin-top: -0.5em;
+    opacity: 0;
+    position: absolute;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    top: 50%;
+    transition: inherit;
+}
+
+.switch-input:checked~.switch-label {
+    background: var(--switchcolor-on);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15),
+        inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.switch-input:checked~.switch-label:before {
+    opacity: 0;
+}
+
+.switch-input:checked~.switch-label:after {
+    opacity: 1;
+}
+
+.switch-handle {
+    -moz-transition: left 0.15s ease-out;
+    -o-transition: left 0.15s ease-out;
+    -webkit-transition: left 0.15s ease-out;
+    background: #fff;
+    background-image: linear-gradient(tobottom,
+            rgba(255, 255, 255, 0.4),
+            #f0f0f0);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    height: 20px;
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    transition: left 0.15s ease-out;
+    width: 20px;
+}
+
+.switch-handle:before {
+    background: #f9f9f9;
+    background-image: linear-gradient(tobottom, #eeeeee, white);
+    border-radius: 6px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+    content: "";
+    height: 12px;
+    left: 50%;
+    margin: -6px 0 0 -6px;
+    position: absolute;
+    top: 50%;
+    width: 12px;
+}
+
+.switch-input:checked~.switch-handle {
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+    left: 50px;
+}

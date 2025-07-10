@@ -1,0 +1,19 @@
+{
+  "preview_1": {
+    "SettingsEnabled": "Setting_1 Setting_2 Setting_3 Setting_4 Setting_5 Setting_6 Setting_7 Setting_8",
+    "StartupOptions": "-2m4 -d3d10",
+    "Images": {
+      "Image_1": "",
+      "Image_2": "",
+      "Image_3": "",
+      "Image_4": ""
+    }
+  },
+  "preview_2": {
+    "SettingsEnabled": "Setting_1 Setting_2 Setting_3",
+    "StartupOptions": "",
+    "Images": {
+      "Image_1": ""
+    }
+  }
+}

@@ -1,0 +1,132 @@
+/* Preview Image */
+:root {
+    --image-slider-width: 750px;
+    --image-slider-height: 422px;
+    --image-slider-border-width: 3px;
+}
+
+.img_slider {
+    position: relative;
+    margin: auto;
+    width:  calc(var(--image-slider-width) + var(--image-slider-border-width) * 2);
+    height: calc(var(--image-slider-height) + var(--image-slider-border-width) * 2);
+    background-image: url(./images/PreviewUnavailable.png);
+    border: var(--image-slider-border-width) solid #131417;
+    box-shadow: rgba(0, 0, 0, 1) 0px 5px 10px 0px;
+}
+
+/*Image */
+.slider_img2 {
+    width: var(--image-slider-width);
+    height: var(--image-slider-height);
+    transition: 1s;
+}
+
+.slider_img {
+    width: var(--image-slider-width);
+    height: var(--image-slider-height);
+    position: absolute;
+    z-index: 0;
+    transition: 1s;
+    opacity: 0;
+}
+
+.slider_img.active {
+    opacity: 1;
+}
+
+/* Dots */
+.img_slider-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.img_slider-dot {
+    width: 10px;
+    height: 10px;
+    z-index: 99;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0px 0px 5px #fff;
+    margin-left: 10px;
+}
+
+.img_slider-dot:hover {
+    background: #fff;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+.img_slider-dot.active {
+    background: #fff;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+/* Left Arrow Button */
+.img_slider-btn_left {
+    position: relative;
+    height: 100%;
+    width: 60px;
+    z-index: 99;
+    cursor: pointer;
+    color: #fff;
+    transition: 1s;
+}
+
+.img_slider-btn_left:hover {
+    background: rgba(0, 0, 0, 0.25)
+}
+
+.img_slider-btn_left:before {
+    content: url("data:image/svg+xml,%3Csvg width='64' height='64' fill='none' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.707 4.293a1 1 0 0 1 0 1.414L9.414 12l6.293 6.293a1 1 0 0 1-1.414 1.414l-7-7a1 1 0 0 1 0-1.414l7-7a1 1 0 0 1 1.414 0Z' fill='%23fff'/%3E%3C/svg%3E%0A");
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -50%;
+    transform: scale(0.75);
+    transition: .5s;
+}
+
+.img_slider-btn_left:hover:before {
+    margin-top: -50%;
+    transform: scale(1);
+}
+
+/* Right Arrow Button */
+.img_slider-btn_right {
+    position: absolute;
+    height: 100%;
+    width: 60px;
+    z-index: 99;
+    cursor: pointer;
+    color: #fff;
+    transition: 1s;
+    right: 0;
+    top: 0;
+}
+
+.img_slider-btn_right:hover {
+    background: rgba(0, 0, 0, 0.25)
+}
+
+.img_slider-btn_right:before {
+    content: url("data:image/svg+xml,%3Csvg width='64' height='64' fill='none' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.293 4.293a1 1 0 0 0 0 1.414L14.586 12l-6.293 6.293a1 1 0 1 0 1.414 1.414l7-7a1 1 0 0 0 0-1.414l-7-7a1 1 0 0 0-1.414 0Z' fill='%23fff'/%3E%3C/svg%3E%0A");
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -50%;
+    transform: scale(0.75);
+    transition: .5s;
+}
+
+.img_slider-btn_right:hover:before {
+    margin-top: -50%;
+    transform: scale(1);
+}

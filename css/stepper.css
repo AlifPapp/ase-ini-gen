@@ -1,0 +1,131 @@
+/* stepper */
+
+:root {
+    --stepperwidth: 175px;
+    --steppercolor: #eceeef;
+    --steppercolor-border: rgba(0, 0, 0, 0.05);
+    --steppercolor-hover: #c6c8c9;
+    --steppercolor-focused: #f5f7f8;
+    --steppercolor-focusedborder: rgba(0, 0, 0, 0.05);
+}
+
+.number-input-container {
+    width: var(--stepperwidth);
+    display: grid;
+    grid-template-columns: 48px auto 48px;
+    padding: 3px;
+    background-color: #fff;
+    border-radius: 0px;
+    box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.number-input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--steppercolor);
+    overflow: hidden;
+}
+
+input[type="number"] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    -moz-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    height: 48px;
+    background-color: var(--steppercolor);
+    border: 1px solid var(--steppercolor-border);
+    border-left: 1px solid rgba(0, 0, 0, 0);
+    border-right: 1px solid rgba(0, 0, 0, 0);
+    border-radius: none;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    transition: all 0.2s ease-out;
+}
+
+input[type="number"]:focus {
+    background-color: var(--steppercolor-focused);
+    border: 1px solid var(--steppercolor-focusedborder);
+    outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 12px 16px;
+    background-color: var(--steppercolor);
+    border: 1px solid var(--steppercolor-border);
+    border-radius: none;
+    transition: all 0.1s ease-out;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+button:active,
+button:focus {
+    outline: none;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+button:disabled {
+    pointer-events: none;
+}
+
+button:disabled::after {
+    opacity: 0.25;
+}
+
+.button-decrement::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 12H7' stroke='%23112C34' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
+.button-increment::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 7V17' stroke='%23112C34' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17 12H7' stroke='%23112C34' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
+.button-decrement {
+    border-right: none;
+}
+
+.button-increment {
+    border-left: none;
+}
+
+@media (hover: hover) {
+
+    input[type="number"]:hover,
+    button:hover {
+        background-color: var(--steppercolor-hover);
+    }
+
+    button:active {
+        background-color: var(--steppercolor);
+        transform: translateY(1px);
+    }
+}
